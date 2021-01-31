@@ -44,12 +44,14 @@
 					<div class="card my-4">
 						<h5 class="card-header">Select a Book</h5>
 						<div class="card-body">
-							<div class="form-group">
-								<select class="form-control" id="bookSelector">
-									<option id="book1">Alice's Adventures in Wonderland</option>
-									<option id="book2">The Adventures of Sherlock Holmes</option>
-									<option id="book3"></option>
-								</select>
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="list-unstyled mb-0" id="selectBook">
+										<li><a href="#"
+												onclick="loadBook('AliceInWonderland.txt', 'AliceInWonderland')">Alice in Wonderland</a></li>
+										
+									</ul>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -57,21 +59,34 @@
 					<div class="card my-4">
 						<h5 class="card-header">Most Used Words</h5>
 						<div class="card-body">
-							
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="list-unstyled mb-0" id="mostUsed">
+									</ul>
+								</div>
+							</div>
 						</div>
 					</div>
 					<!--Least Used Words-->
 					<div class="card my-4">
 						<h5 class="card-header">Least Used Words</h5>
 						<div class="card-body">
-							
+							<div class="row">
+								<div class="col-md-12">
+									<ul class="list-unstyled mb-0" id="leastUsed">
+								</div>
+							</div>
 						</div>
 					</div>
 					<!--Document Stats-->
 					<div class="card my-4">
 						<h5 class="card-header">Document Stats</h5>
 						<div class="card-body">
-							
+							<ul class="list-unstyled mb-0">
+								<li id="docLength"></li>
+								<li id="wordCount"></li>
+								<li id="charCount"></li>
+							</ul>
 						</div>
 					</div>
 				</div>
