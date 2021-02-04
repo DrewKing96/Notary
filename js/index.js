@@ -14,7 +14,7 @@ function loadBook(filename, displayName) {
 	xhr.onreadystatechange = function() {
 		if(xhr.readState == 4 && xhr.status == 200) {
 			currentBook = xhr.responseText;
-
+			getStats(currentBook);
 			//remove line breaks and carriage returns replacing with a <br>
 			currentBook = currentBook.replace(/(?:\r\n|\r|\n)/g, '<br>');
 			document.getElementById("fileContent").innerHTML = currentBook;
@@ -23,4 +23,15 @@ function loadBook(filename, displayName) {
 			element.scrollTop = 0;
 		}
 	};
+}
+
+function getStats(book) {
+	var docLength = document.getElementById("docLength");
+	var wordCount = document.getElementById("wordCount");
+	var charCount = document.getElementById("charCount);")
+
+	let lower = book.toLowerCase();
+	let words = book .match(/\b/S+\b/g);
+	let wordDict = {};
+	var uncommon = [];
 }
