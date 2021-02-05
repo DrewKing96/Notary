@@ -28,10 +28,11 @@ function loadBook(filename, displayName) {
 function getStats(book) {
 	var docLength = document.getElementById("docLength");
 	var wordCount = document.getElementById("wordCount");
-	var charCount = document.getElementById("charCount);")
+	var charCount = document.getElementById("charCount");
 
 	let lower = book.toLowerCase();
 	//let words = book .match(/\b/S+\b/g);
 	let wordDict = {};
 	var uncommon = [];
+	docLength.innerHTML = 'Test';
 }
