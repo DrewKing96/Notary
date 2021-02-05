@@ -22,7 +22,7 @@ function loadBook(filename, displayName) {
 			var element = document.getElementById("fileContent");
 			element.scrollTop = 0;
 		}
-	};
+	}
 }
 
 function getStats(book) {
