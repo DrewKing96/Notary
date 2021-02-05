@@ -12,7 +12,7 @@ function loadBook(filename, displayName) {
 	xhr.send();
 
 	xhr.onreadystatechange = function() {
-		if(xhr.readState == 4 && xhr.status == 200) {
+		if(xhr.readyState == 4 && xhr.status == 200) {
 			currentBook = xhr.responseText;
 
 			getStats(currentBook);
