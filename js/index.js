@@ -31,7 +31,7 @@ function getStats(book) {
 	var charCount = document.getElementById("charCount);")
 
 	let lower = book.toLowerCase();
-	let words = book .match(/\b/S+\b/g);
+	//let words = book .match(/\b/S+\b/g);
 	let wordDict = {};
 	var uncommon = [];
 }
